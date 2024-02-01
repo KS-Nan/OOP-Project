@@ -20,7 +20,7 @@ public class BookingSystem {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/carbooking";
             String username = "root";
-            String password = "koumsoknan@30092003";  // Replace with your actual password
+            String password = "...........";  // Replace with your actual password
             this.connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
