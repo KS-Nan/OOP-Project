@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.60), rgb(0, 0, 0, 0.60)), url("Car.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.main-section {
+    width: 50%;
+    line-height: 1;
+}
+
+.content h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 17px;
+    margin-top: 25px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.content .button {
+    margin-top: 25px;
+}
+
+.content .button a {
+    font-size: 20px;
+    background-color: #ff0000;
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.content .button a:hover {
+    background-color: #d41313;
+}

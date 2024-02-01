@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Booking System</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Car Booking System</h1>
+    <hr>
+    <h2>Update Trip</h2>
+
+    <!-- Use the correct th:action syntax -->
+    <form th:action="@{/trips/create}" method="POST" th:object="${trips}">
+        <input type="hidden" th:field="*{id}" />
+
+        <div class="form-group">
+            <label>Trip Number</label>
+            <input type="text" th:field="*{tripNumber}" class="form-control" placeholder="Trip Number">
+        </div>
+
+        <div class="form-group">
+            <label>Departure City</label>
+            <input type="text" th:field="*{departureCity}" class="form-control" placeholder="Departure City">
+        </div>
+
+        <div class="form-group">
+            <label>Destination City</label>
+            <input type="text" th:field="*{destinationCity}" class="form-control" placeholder="Destination City">
+        </div>
+
+        <div class="form-group">
+            <label>Departure Time</label>
+            <input type="text" th:field="*{departureTime}" class="form-control" placeholder="Departure Time">
+        </div>
+
+        <div class="form-group">
+            <label>Arrival Time</label>
+            <input type="text" th:field="*{arrivalTime}" class="form-control" placeholder="Arrival Time">
+        </div>
+
+        <div class="form-group">
+            <label>Available Seats</label>
+            <input type="number" th:field="*{availableSeats}" class="form-control" placeholder="Available Seats">
+        </div>
+
+        <button type="submit" class="btn btn-info">Save Trip</button>
+    </form>
+
+    <hr>
+
+    <a th:href="@{/trips}">Back to Trip List</a>
+</div>
+</body>
+</html>
