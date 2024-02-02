@@ -281,7 +281,7 @@ public class BookingSystem {
 
     public void addTripByadmin() {
 
-        System.out.println("Are you sure you want to add the flight?");
+        System.out.println("Are you sure you want to add the Trip?");
         System.out.print("Enter 'Yes' to confirm, 'No' to cancel: ");
         String confirmation = scanner.nextLine();
         if (confirmation.equalsIgnoreCase("Yes")) {
